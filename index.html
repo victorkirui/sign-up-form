@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="logo">
+          <img src="./images/odin-logo.png" alt="odin-logo" />
+          <h1>ODIN</h1>
+        </div>
+        <p class="footer">
+          Photo by <span class="underline">Halie West</span> on
+          <span class="underline">unsplash</span>
+        </p>
+      </div>
+
+      <div class="aside">
+        <div class="content">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your real life to help you realize your deepest dreams.<br />Sign
+            up <em>now</em> to get started.
+          </p>
+          <p style="margin: 20px 0 40px">You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="form-section">
+          <form action="./" method="post">
+            <div class="form-contents-container">
+              <h2 style="margin-bottom: 30px">Let's do this!</h2>
+              <div class="form-contents">
+                <div class="left">
+                  <label for="first_name">FIRST NAME</label>
+                  <input
+                    type="text"
+                    name="first_name"
+                    id="first_name"
+                    maxlength="30"
+                    required
+                  />
+
+                  <label for="email">EMAIL</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    maxlength="250"
+                    required
+                  />
+
+                  <label for="password">PASSWORD</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    maxlength="250"
+                    required
+                  />
+                </div>
+                <div class="right">
+                  <label for="last_name">LAST NAME</label>
+                  <input
+                    type="text"
+                    name="last_name"
+                    id="last_name"
+                    maxlength="30"
+                    required
+                  />
+
+                  <label for="tel">PHONE NUMBER</label>
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    maxlength="15"
+                    required
+                  />
+
+                  <label for="confirm_password">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    name="confirm_password"
+                    id="confirm_password"
+                    maxlength="250"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="footer-margin">
+              <button type="submit">Create Account</button>
+            </div>
+          </form>
+
+          <p class="footer-margin">
+            Already have an account?<span class="login"> Log in</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
